@@ -1,0 +1,94 @@
+:root {
+    --h1-font-size: calc(48 /16 * 1rem);
+    --h2-font-size: calc(18 /16 * 1rem);
+
+    --font-weight-bold: 700;
+    --font-weight-regular: 400;
+
+    --yellow: hsl(54deg 100% 50%);
+    --black: hsl(0, 0%, 0%);
+    --grey: hsl(0, 0%, 25%);
+    --white: hsl(0, 0%, 100%);
+
+    --side-padding: 7.5%;
+    --section-spacing: 55px;
+
+    --default-margin: 1.25rem 0;
+}
+
+*::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img, svg {
+    display: block;
+    max-width: 100%;
+}
+
+button, nav {
+    font: calc(14 / 16 * 1rem);
+    font-family: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+    color: white;
+    margin: var(--default-margin);
+}
+button {
+    margin: var(--default-margin);
+}
+.accentText {
+    color: var(--yellow)
+}
+main {
+    background-image: url(./images/hero-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* tablet or smaller */
+@media(max-width: 1080px) {
+    main {
+        background-position: 20% 0;
+    }
+}
+@media(max-width: 800px) {
+    main {
+        background-position: 40% 0;
+    }
+}
+@media(max-width: 650px) {
+    main {
+        background-position: 55% 0;
+        background-image: url(./images/hero-bg.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+@media(max-width: 500px) {
+    main {
+        background-position: 65% 0;
+    }
+    
+}
+@media(max-width: 320px) {
+    main {
+        background-position: 0;
+    }
+}

@@ -1,0 +1,47 @@
+.infoBlock {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--section-spacing) var(--side-padding);
+}
+b {
+    color: var(--grey);
+}
+.infoBlock article {
+    max-width: 340px;
+}
+
+.infoBlock p, .infoBlock h2 {
+    color: black;
+    text-align: center;
+}
+.infoBlock h2 {
+    font-size: var(--h2-font-size);
+    position: relative;
+}
+.infoBlock h2::after {
+    content: '';
+    position: absolute;
+    left: 65%;
+    bottom: -10px;
+    width: 50px;
+    height: 2px;
+    background: var(--yellow);
+    transform:translateX(-65px)
+}
+
+@media(max-width: 500px) {
+
+}
+
+@media(max-width: 650px) {
+    .infoBlock {
+        flex-direction: column;
+    }
+    .infoBlock article {
+        margin: auto;
+    }
+}
+
+@media(max-width: 1080px) {
+    
+}
